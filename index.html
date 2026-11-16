@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Imaad Shaikh · Data &amp; AI</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1d2420;--muted:#5d6862;--line:#e3e6e0;--accent:#0f766e;--chip:#e6f2ef;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121715;--card:#1a211e;--text:#e8ede9;--muted:#9aa6a0;--line:#2a332f;--accent:#4fd1c0;--chip:#1f2e2a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121715;--card:#1a211e;--text:#e8ede9;--muted:#9aa6a0;--line:#2a332f;--accent:#4fd1c0;--chip:#1f2e2a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+main,nav{max-width:900px;margin:0 auto;padding:0 20px}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:20px;font-size:.92rem}
+nav b{margin-right:auto;font-size:1rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:56px 0 24px}
+h1{font-size:2.4rem;margin:0 0 4px;letter-spacing:-.02em}
+.role{color:var(--accent);font-weight:600;margin:0 0 18px}
+.lead{font-size:1.2rem;max-width:640px}
+.lead em{font-style:normal;background:var(--chip);color:var(--accent);padding:0 4px;border-radius:4px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.btn{padding:9px 16px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.btn.fill{background:var(--accent);color:var(--bg)}
+.glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:28px}
+.glance div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.92rem}
+.glance small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;font-weight:700}
+h2{font-size:1.5rem;margin:56px 0 8px;letter-spacing:-.01em}
+h2 + .intro{color:var(--muted);margin:0 0 22px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:18px}
+.proj .k{color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.proj h3{margin:4px 0 4px;font-size:1.25rem}
+.q{font-style:italic;color:var(--muted);margin:0 0 12px}
+.proj h4{margin:14px 0 4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.proj p,.proj ul{margin:0 0 8px;font-size:.96rem}
+.proj ul{padding-left:20px}
+.limit{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-size:.9rem}
+.links{display:flex;gap:14px;margin:6px 0 4px;font-size:.92rem;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{background:var(--chip);color:var(--accent);font-size:.76rem;padding:2px 9px;border-radius:99px;font-weight:600}
+.other{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.other div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;font-size:.92rem}
+.other b{display:block}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:20px}
+.tl div{margin-bottom:20px;position:relative}
+.tl div::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl small{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.72rem}
+.tl h3{margin:0;font-size:1.05rem}
+.tl p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.sk h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sk .tags{margin:0}
+.contact a.btn{margin:0 8px 8px 0;display:inline-block}
+footer{margin:56px 0 32px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<nav><b>Imaad Shaikh</b><a href="#projects">Projects</a><a href="#about">About</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<main>
+<section class="hero" id="top">
+<h1>I’m Imaad Shaikh</h1>
+<p class="role">Postgraduate getting into data analytics &amp; AI · Abu Dhabi, UAE</p>
+<p class="lead">I trained as a mechanical engineer. Now I work with data and I’m <em>playing and experimenting with AI</em>, one small project at a time.</p>
+<p>MEng in Big Data Analytics, with an internship in BI at Nokia. I work with Python, SQL and Power BI, and I like projects that start with a real question and end with something a team could act on.</p>
+<div class="btns"><a class="btn fill" href="#projects">See my projects</a><a class="btn" href="https://github.com/ImaadShaikh">GitHub</a><a class="btn" href="https://linkedin.com/in/imaad-salim-shaikh-001164177">LinkedIn</a></div>
+<div class="glance">
+<div><small>Looking for</small>Junior data / AI roles, full-time, in the UAE</div>
+<div><small>Location</small>Abu Dhabi</div>
+<div><small>Work permit</small>UAE Golden Visa, no sponsorship needed, available now</div>
+<div><small>Languages</small>English (fluent) · German (A2)</div>
+<div><small>Core tools</small>Python · SQL · Power BI · Snowflake · Azure Synapse · Databricks</div>
+<div><small>Learning</small>Agentic AI workflows and LangGraph</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Selected work</h2>
+<p class="intro">Each project starts with a question. Details are on GitHub.</p>
+
+<article class="proj">
+<div class="k">01 · GenAI · Local RAG</div>
+<h3>Local RAG &amp; Agentic Q&amp;A System</h3>
+<p class="q">“How far can a small local model get when you ask it questions about your own documents?”</p>
+<div class="links"><a href="https://github.com/ImaadShaikh/rag-agentic-qa-system">GitHub</a></div>
+<h4>What I did</h4>
+<p>Built a retrieval-augmented Q&amp;A system that runs fully on my own machine, then added a ReAct agent that can use tools such as a calculator.</p>
+<h4>What I learned</h4>
+<ul>
+<li><b>Chunk size changes retrieval.</b> Different chunk sizes gave noticeably different similarity scores.</li>
+<li><b>Hallucinations are detectable.</b> I tested where the model answered without support from the documents.</li>
+<li><b>Vector store choice shifts scores.</b> ChromaDB and an in-memory index gave different score ranges for the same queries.</li>
+</ul>
+<p class="limit">Honest limit: it runs on a local Llama 3 model, which is less reliable at forcing tool use than hosted models.</p>
+<div class="tags"><span>LlamaIndex</span><span>ChromaDB</span><span>Ollama</span><span>Llama 3</span><span>ReAct agent</span></div>
+</article>
+
+<article class="proj">
+<div class="k">02 · Process Mining · Case study</div>
+<h3>Pizzeria Mamma Mia: Order-to-Cash</h3>
+<p class="q">“Why is a pizzeria with healthy revenue making such thin margins?”</p>
+<h4>What I did</h4>
+<p>Analysed the order-to-cash process of a Munich pizzeria (1,998 orders) in Celonis, using the Process and Variant Explorer plus the costs, profits, customer satisfaction and rework views.</p>
+<h4>What I found</h4>
+<ul>
+<li><b>Revenue was fine, margins weren’t.</b> The cost pressure came from ingredients and delivery.</li>
+<li><b>Few process variants were optimised.</b> Only 19% of them.</li>
+<li><b>Products differed a lot.</b> Salami had a 29.6% margin against 40.67% for Calzone.</li>
+</ul>
+<h4>What a business can do</h4>
+<p>Improve delivery assignments and ingredient supply, push orders towards the common process paths, promote higher-margin pizzas, and track margins and cost breakdowns over time.</p>
+<div class="tags"><span>Celonis</span><span>Process mining</span><span>Order-to-Cash</span></div>
+</article>
+
+<article class="proj">
+<div class="k">03 · Data Engineering · BI</div>
+<h3>Olympic Performance Dashboard</h3>
+<p class="q">“Can I take raw Olympics data all the way to a dashboard on a cloud stack?”</p>
+<div class="links"><a href="https://github.com/ImaadShaikh/tokyo-olympic-azure-data-engineering-project">GitHub</a></div>
+<p>An end-to-end Azure pipeline on Tokyo Olympics data: ingestion, transformation in Databricks with PySpark, Synapse for analytics and a Power BI dashboard on top.</p>
+<div class="tags"><span>Azure Synapse</span><span>Databricks</span><span>PySpark</span><span>Power BI</span></div>
+</article>
+
+<article class="proj">
+<div class="k">04 · SQL · NLP</div>
+<h3>Yelp Business Reviews Analysis</h3>
+<p class="q">“What do millions of reviews say about how businesses are doing?”</p>
+<div class="links"><a href="https://github.com/ImaadShaikh/Yelp-Business-Reviews-Analysis">GitHub</a></div>
+<p>SQL analysis of 6M+ Yelp records in Snowflake, including a sentiment-scoring function (TextBlob) applied to review text.</p>
+<div class="tags"><span>SQL</span><span>Snowflake</span><span>TextBlob</span></div>
+</article>
+
+<article class="proj">
+<div class="k">05 · Machine Learning · Thesis</div>
+<h3>Modified K-Means Clustering</h3>
+<p class="q">“Can K-Means handle data points that belong to more than one cluster?”</p>
+<div class="links"><a href="https://github.com/ImaadShaikh/MSIS-OverlappingKmeans">GitHub</a></div>
+<p>My MEng thesis, done in a team of three. We modified K-Means for overlapping clusters and judged the results with the elbow method, silhouette scores, the gap statistic and Jaccard stability.</p>
+<div class="tags"><span>Python</span><span>Clustering</span><span>Jupyter</span></div>
+</article>
+
+<article class="proj">
+<div class="k">06 · GenAI · API</div>
+<h3>Medical Diagnosis App</h3>
+<p class="q">“Can a fully local LLM turn a symptom description into structured, sourced insights?”</p>
+<div class="links"><a href="https://github.com/ImaadShaikh/Medical-Diagnosis-App">GitHub</a></div>
+<p>Takes free-text symptoms and returns extracted symptoms, possible diagnoses and PubMed summaries, through a FastAPI endpoint and an MCP tool. Inference runs locally, so no data leaves the machine.</p>
+<p class="limit">Honest limit: educational project only, not medical advice.</p>
+<div class="tags"><span>FastAPI</span><span>MCP</span><span>Ollama</span><span>PubMed API</span></div>
+</article>
+
+<h2 style="margin-top:36px">Other things I’ve built</h2>
+<div class="other">
+<div><b><a href="https://github.com/ImaadShaikh/slackbot-content-pipeline">Slackbot content pipeline</a></b>A Slack bot that cleans and groups keywords, then generates content ideas for a content team.</div>
+<div><b><a href="https://github.com/ImaadShaikh/Real-Time-Stock-Trend-Prediction-Streamlit-ML">Stock trend prediction</a></b>Random Forest model on hourly AAPL data, shown in a Streamlit app.</div>
+<div><b><a href="https://github.com/ImaadShaikh/F1_prediction">F1 prediction</a></b>A Formula 1 prediction notebook.</div>
+</div>
+</section>
+
+<section id="about">
+<h2>From machines <em style="font-style:normal;color:var(--accent)">to data</em></h2>
+<p>I started in mechanical engineering and even published a review paper on delamination in composite machining. Working with data kept pulling me in, so I moved across with an MEng in Big Data Analytics, finishing with First Class with Distinction.</p>
+<p>At Nokia I spent about eleven months as a Data Analytics &amp; BI intern, building dashboards for my team and supporting Python automation work. Since then I’ve been building projects, adding certifications, and learning how to build with LLMs. I’m looking for a junior data or AI role where I can keep learning.</p>
+</section>
+
+<section id="journey">
+<h2>How I got here</h2>
+<p class="intro">&nbsp;</p>
+<div class="tl">
+<div><small>Now</small><h3>Looking for my first data / AI role</h3><p>Abu Dhabi. Building projects and applying to junior data and AI roles in the UAE.</p></div>
+<div><small>Certifications</small><h3>Snowflake SnowPro Core · Databricks Fundamentals · Celonis Rising Star (Business and Technical)</h3><p>Earned in 2025.</p></div>
+<div><small>Internship</small><h3>Data Analytics &amp; BI Intern</h3><p>Nokia Solutions and Networks · about 11 months.</p></div>
+<div><small>Postgraduate</small><h3>MEng, Big Data Analytics</h3><p>Manipal Academy of Higher Education · First Class with Distinction (GPA 3.66/4.0).</p></div>
+<div><small>Undergraduate</small><h3>BE, Mechanical Engineering</h3><p>Mangalore Institute of Technology and Engineering.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Tools I work with</h2>
+<p class="intro">&nbsp;</p>
+<div class="sk">
+<div><h4>Analysis</h4><div class="tags"><span>Python</span><span>SQL</span><span>pandas</span><span>R</span></div></div>
+<div><h4>BI &amp; visualisation</h4><div class="tags"><span>Power BI</span><span>Tableau</span><span>Celonis</span></div></div>
+<div><h4>Data engineering</h4><div class="tags"><span>Snowflake</span><span>Azure Synapse</span><span>Databricks</span><span>PySpark</span></div></div>
+<div><h4>GenAI (experimenting)</h4><div class="tags"><span>LlamaIndex</span><span>ChromaDB</span><span>Ollama</span><span>RAG</span><span>ReAct agents</span></div></div>
+<div><h4>Methods</h4><div class="tags"><span>EDA</span><span>Clustering</span><span>Random Forest</span><span>Process mining</span></div></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk</h2>
+<p>If you have a junior data or AI role, or want to talk about one of these projects, I’d be glad to hear from you.</p>
+<a class="btn fill" href="mailto:imaadsh@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/imaad-salim-shaikh-001164177">LinkedIn</a><a class="btn" href="https://github.com/ImaadShaikh">GitHub</a>
+</section>
+<footer>© 2026 Imaad Shaikh</footer>
+</main>
+</body>
+</html>
